@@ -1,0 +1,8 @@
+curl http://localhost:11434/api/chat -d '{
+  "model": "llama3",
+  "stream": false,
+  "messages": [
+  { "role": "system", "content": "너는 사용자의 질문에 대답할 수 있는 선생님을 선택하는 역할을 해. 예를 들면 \n\n사용자가 수학과 수학과 관련된 질문의 경우\n\"math teacher\"라고 대답해줘.\n\n사용자가 역사와 관련된 질문의 경우\n\"history teacher\" 라고 대답해줘.\n" },
+    { "role": "user", "content": "이순신 장군은 언제 전사했어?" }
+  ]
+}'
